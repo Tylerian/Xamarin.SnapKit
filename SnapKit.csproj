@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48BFC12D-2A56-4385-A361-BB0D1C1921E5}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SnapKit</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>SnapKit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Constraint.cs" />
+    <Compile Include="Classes\ConstraintAttributes.cs" />
+    <Compile Include="Classes\ConstraintConfig.cs" />
+    <Compile Include="Classes\ConstraintConstantTarget.cs" />
+    <Compile Include="Classes\ConstraintDescription.cs" />
+    <Compile Include="Classes\ConstraintDSL.cs" />
+    <Compile Include="Classes\ConstraintInsetTarget.cs" />
+    <Compile Include="Classes\ConstraintItem.cs" />
+    <Compile Include="Classes\ConstraintLayoutGuide.cs" />
+    <Compile Include="Classes\ConstraintLayoutGuideDSL.cs" />
+    <Compile Include="Classes\ConstraintLayoutSupport.cs" />
+    <Compile Include="Classes\ConstraintLayoutSupportDSL.cs" />
+    <Compile Include="Classes\ConstraintMaker.cs" />
+    <Compile Include="Classes\ConstraintMakerEditable.cs" />
+    <Compile Include="Classes\ConstraintMakerExtendable.cs" />
+    <Compile Include="Classes\ConstraintMakerFinalizable.cs" />
+    <Compile Include="Classes\ConstraintMakerPrioritizable.cs" />
+    <Compile Include="Classes\ConstraintMakerRelatable.cs" />
+    <Compile Include="Classes\ConstraintMultiplierTarget.cs" />
+    <Compile Include="Classes\ConstraintOffsetTarget.cs" />
+    <Compile Include="Classes\ConstraintPriorityTarget.cs" />
+    <Compile Include="Classes\ConstraintRelatableTarget.cs" />
+    <Compile Include="Classes\ConstraintRelation.cs" />
+    <Compile Include="Classes\ConstraintViewDSL.cs" />
+    <Compile Include="Classes\Debugging.cs" />
+    <Compile Include="Classes\Extensions.CGPoint.cs" />
+    <Compile Include="Classes\Extensions.CGSize.cs" />
+    <Compile Include="Classes\Extensions.ConstraintAttributes.cs" />
+    <Compile Include="Classes\Extensions.ConstraintRelation.cs" />
+    <Compile Include="Classes\Extensions.UILayoutSupport.cs" />
+    <Compile Include="Classes\Extensions.UIView.cs" />
+    <Compile Include="Classes\LayoutConstraint.cs" />
+    <Compile Include="Classes\LayoutConstraintItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
